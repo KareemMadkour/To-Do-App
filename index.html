@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <title>To-Do-App</title>
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+         crossorigin="anonymous"> 
+    -->
+    <!--Css--> <link rel="stylesheet" href="./css/bootstrap.min.css"> <!--Css-->
+    <!--Css--> <link rel="stylesheet" href="./css/all.min.css"> <!--Css-->
+    <!--Css--> <link rel="stylesheet" href="./css/main.css"> <!--Css-->
+</head>
+
+<body>
+    <!-- dark-light mode start -->
+    <button class="btnDark mt-0 ml-0"><img src="./images/lamp.png"></button>
+    <!-- dark-light mode end -->
+    <h1 class="text-info text-center display-4">Welcome at To-Do App</h1>
+    <button class="btn btn-info btn-block w-50 mx-auto" id="modelBtn">Add task from here</button>
+    <div class="container col-md-8 mt-5">
+        <div class="card">
+            <div class="card-body">
+                <div id="allTasks"></div>
+                <div class="alert alert-danger" id="noTasks">
+                    <h5 class="text"> No data added yet</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="model" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add task from here</h5>
+                    <button onclick="showModel()" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label class="b">Task Data</label>
+                                    <input id="taskInput" type="text" class="form-control" placeholder="Add task">
+                                    <div id="invalid" class="alert alert-danger none">
+                                        Please enter valid data
+                                        <button type="button" class="close" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+
+                                </div>
+                                <button id="addBtn" class="btn btn-info btn-block">Add Task</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" onclick="showModel()" class="btn btn-secondary"
+                        data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Js--> <script src="./js/main.js"></script> <!--Js-->
+    <!--Js--> <script src="./js/jquery-3.6.0.min.js"></script> <!--Js-->
+    <!--Js--> <script src="./js/popper.min.js"></script> <!--Js-->
+    <!--Js--> <script src="./js/bootstrap.min.js"></script> <!--Js-->
+</body>
+
+</html>

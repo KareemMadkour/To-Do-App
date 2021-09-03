@@ -1,0 +1,39 @@
+body
+{
+    background-color: #111;
+    color: #111;
+}
+.card
+{
+    background-color: #333;
+    color: white;
+}
+.none
+{
+display: none;
+}
+.block{
+    display: block;
+}
+.check{
+    text-decoration: line-through;
+    background-color: grey;
+}
+
+.textNoDataAdded{
+    text-align: center;
+}
+
+
+/* dark-light mode */
+.btnDark img{
+    width: 30px;
+}
+.btnDark{
+    background-color: black;
+    color: white;
+}
+.btnLight{
+    background-color: white;
+    color: black;
+}
